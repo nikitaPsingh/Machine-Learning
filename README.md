@@ -58,5 +58,26 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 ### 2. Label Encoder
 - Converts the column into real values (like 0, 1, 2...) depending on the number of categories.
 
+## Underfitting and Overfitting
+- Underfitting: A situation where a ML model performs better when being tested than when learning
+- Overfitting: A situation where a ML model learns only on one dataset and cannot adapt to any other
+- Equalfitting: A situation where a ML model works perfectly well and can solve any challenge
+
+## Data Pre-Processing
+1. Importing the Libraries
+2. Importing the dataset
+3. Taking care of missing values
+4. Encoding the categorical data
+5. Splitting dataset into training anf test set
+6. Feature Scaling
+
+## Regression
+1. Simple Linear Regression
+2. Multiple Linear Regression
+3. Polynomial Regression
+4. Support vector for regression (SVM)
+5. Decision Tree Regression
+6. Random Forest Regression
+
 
 
