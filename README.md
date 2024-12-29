@@ -33,12 +33,12 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 - Apply feature scaling on X_train and X_test separately
 - *Feature Scaling should not be applied to dummy variables (dummuy variables refer to the columns that are encoded)*
 
-1. Normalization
+### 1. Normalization
    X' = (X - min(X))/(max(X) - min(X))
    - min(X) : min of that column
    - recommended when we have normal distribution in most features
    - [0 ; +1]
-2. Standardization
+### 2. Standardization
    X' = (X - mean(X))/ standard deviation(X)
    - mean(X) : mean of that column
    - standard deviation(X) : sd of X
@@ -53,9 +53,10 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 ## Encoding
 - Encoding means transforming the categorical columns to real values so that we can use them to train the model. (categorical columns refer to the columns with string values)
 
-1. One Hot Encoding
-     - Creates new column and assigns binary values in 0s and 1s
-2. Label Encoder
-     - Converts the column into real values (like 0, 1, 2...) depending on the number of categories.
-  
+### 1. One Hot Encoder
+ - Creates new column and assigns binary values in 0s and 1s
+### 2. Label Encoder
+- Converts the column into real values (like 0, 1, 2...) depending on the number of categories.
+
+
 
