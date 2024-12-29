@@ -28,20 +28,15 @@ from sklearn.preprocessing import OneHotEncoder
 ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [0])], remainder='passthrough')
 X = np.array(ct.fit_transform(X))
 
-#print(X)
-
 #from sklearn.preprocessing import LabelEncoder
 # le1 = LabelEncoder()
 # X[:, 0] = le1.fit_transform(X[:, 0])
-# print(X)
 
 # 5. Encoding the target variable using label encoder
 
 from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 y = le.fit_transform(y)
-
-#print(y)
 
 # 6. Splitting into training set and test set
 
