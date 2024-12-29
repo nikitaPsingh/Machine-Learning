@@ -72,12 +72,21 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 6. Feature Scaling
 
 ## Regression
-1. Simple Linear Regression
-2. Multiple Linear Regression
-3. Polynomial Regression
-4. Support vector for regression (SVM)
-5. Decision Tree Regression
-6. Random Forest Regression
+### 1. Simple Linear Regression
+ y = b0 + b1X1
+- y: Dependent variable
+- b0: y_intercept(constant)
+- b1: Slope coefficient
+- X1: Independent variable
+
+  #### *How to determine the best regression line?*
+  b0, b1 such that: SUM ((yi - y'i)^2 ) is minimized
+  
+### 2. Multiple Linear Regression
+### 3. Polynomial Regression
+### 4. Support vector for regression (SVM)
+### 5. Decision Tree Regression
+### 6. Random Forest Regression
 
 
 
