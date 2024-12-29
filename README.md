@@ -4,6 +4,28 @@
 2. Modelling
 3. Evaluation
 
+## OOPS Concept
+
+We have Classes, Objects and Methods in Machine Learning
+- Libraries have different Modules
+- Modules have different Classes
+- We create objects for the classes
+- Each object has different methods
+
+### Example
+```
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+X_train[:, 3:5] = sc.fit_transform(X_train[:, 3:5])
+X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
+```
+
+
+- preprocessing is the module of sklearn library
+- standard Scaler is a class
+- sc is an object of the class
+- fit_transform is a method 
+
 ## Feature Scaling
 - Applied to columns only
 - To scale all the values in a particular range so that they become comparable
