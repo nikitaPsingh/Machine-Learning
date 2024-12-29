@@ -34,12 +34,12 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 - *Feature Scaling should not be applied to dummy variables (dummuy variables refer to the columns that are encoded)*
 
 ### 1. Normalization
-   X' = (X - min(X))/(max(X) - min(X))
+   > X' = (X - min(X))/(max(X) - min(X))
    - min(X) : min of that column
    - recommended when we have normal distribution in most features
    - [0 ; +1]
 ### 2. Standardization
-   X' = (X - mean(X))/ standard deviation(X)
+   > X' = (X - mean(X))/ standard deviation(X)
    - mean(X) : mean of that column
    - standard deviation(X) : sd of X
    -  works almost all the time
@@ -73,7 +73,7 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 
 ## Regression
 ### 1. Simple Linear Regression
- y = b0 + b1X1
+ > y = b0 + b1X1
 - y: Dependent variable
 - b0: y_intercept(constant)
 - b1: Slope coefficient
