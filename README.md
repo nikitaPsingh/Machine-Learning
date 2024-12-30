@@ -72,6 +72,14 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 6. Feature Scaling
 
 ## Regression
+### Assumptions of Linear Regression
+1. Linearity (Linear relationship between Y and X)
+2. Homoscedasticity (Equal variance) - No cone shape in graph
+3. Multivariate Normality (Normality of error distribution)
+4. Independence of observations (no autocorrealtion) - Ex. Stock Market
+5. Lack of Multicollinearity (Predictors are not correlated with each other)
+6. The outlier check (an "extra")
+      
 ### 1. Simple Linear Regression
  > y = b0 + b1X1
 - y: Dependent variable
@@ -81,8 +89,12 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 
   #### *How to determine the best regression line?*
   b0, b1 such that: SUM ((yi - y'i)^2 ) is minimized
+  Ordinary Least Squares Method is used
   
 ### 2. Multiple Linear Regression
+> y = b0 + b1X1+ b2X2 + .... + bnXn
+
+
 ### 3. Polynomial Regression
 ### 4. Support vector for regression (SVM)
 ### 5. Decision Tree Regression
