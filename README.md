@@ -151,7 +151,13 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 #### *The multiple linear regression class takes care of the dummy variable trap as well as the best features to choose for best significatnt value*
 
 
-### 3. Polynomial Regression
+### 3. Polynomial Linear Regression
+> y = b0 + b1x1 + b2x1^2 + ... + bnx1^n
+
+ *It is still called 'Linear' because the coefficients are linear*
+
+
+
 ### 4. Support vector for regression (SVM)
 ### 5. Decision Tree Regression
 ### 6. Random Forest Regression
