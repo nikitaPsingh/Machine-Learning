@@ -107,7 +107,6 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 - A result has statistical significance when a result at least as "extreme" would be very infrequent if the null hypothesis were true.
 - A statistically significant test result (P ≤ 0.05) means that the test hypothesis is false or should be rejected. A P value greater than 0.05 means that no effect was observed.
 - *A p-value measures the probability of obtaining the observed results, assuming that the null hypothesis is true. The lower the p-value, the greater the statistical significance of the observed difference. A p-value of 0.05 or lower is generally considered statistically significant.*
-- #### *Low P-value is good*
 
 ### Building A Model
 5 Methods:
