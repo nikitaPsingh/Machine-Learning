@@ -147,6 +147,10 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 
 *Method 2, 3 & 4 are Stepwise Regression*
 
+#### *In Multiple Linear Regression we need not apply Feature Scaling because the coefficients do the work of balancing*
+
+#### *The multiple linear regression class takes care of the dummy variable trap as well as the best features to choose for best significatnt value*
+
 
 ### 3. Polynomial Regression
 ### 4. Support vector for regression (SVM)
