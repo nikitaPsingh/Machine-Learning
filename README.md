@@ -176,6 +176,14 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
   9. Linear spline kernel in 1d
       
 ### 5. Decision Tree Regression
+
+*CART*
+1. Classification trees
+2. Regression trees
+
+   - Algorithm are used to create splits in the graph and take average for each terminal leaves
+   - Information entropy is used
+   - To get the value of y for given features we check which terminal leaf in which the point falls in. And the value of that terminal leaf will be our answer  
 ### 6. Random Forest Regression
 
 
