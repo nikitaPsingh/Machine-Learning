@@ -55,8 +55,10 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 
 ### 1. One Hot Encoder
  - Creates new column and assigns binary values in 0s and 1s
+ - Used when the order of categorical features doesn't matter, or when there are fewer categories in a feature. One-hot encoding creates new binary columns to represent each category. 
 ### 2. Label Encoder
 - Converts the column into real values (like 0, 1, 2...) depending on the number of categories.
+- Used when there is an intrinsic order in the categories, or when you want to preserve ordinal information. Label encoding converts each value in a column into a number. 
 
 ## Underfitting and Overfitting
 - Underfitting: A situation where a ML model performs better when being tested than when learning
