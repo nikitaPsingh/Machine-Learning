@@ -156,9 +156,25 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 
  *It is still called 'Linear' because the coefficients are linear*
 
-
+ It is a linear model.
 
 ### 4. Support vector for regression (SVM)
+- E(epsilon)-insensitive tube
+- We have a margin of error that we are allowing to the linear regression line
+- The points outside the tube do have error and the ones inside don't
+
+  ### Kernel Functions
+  *Kernel functions allow SVMs to handle non-linear and complex data without explicitly computing the features*
+  1. Polynomial Kernel
+  2. Gaussian Kernel
+  3. Gaussian Radial Basis function (RBF)
+  4. Laplace RBF Kernel
+  5. Hyperbolic Tangent Kernel
+  6. Sigmoid Kernel
+  7. Bessel function of first kind kernel
+  8. Anova Radial basis kernel
+  9. Linear spline kernel in 1d
+      
 ### 5. Decision Tree Regression
 ### 6. Random Forest Regression
 
