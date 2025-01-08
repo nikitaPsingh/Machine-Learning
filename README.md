@@ -153,14 +153,14 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 #### *The multiple linear regression class takes care of the dummy variable trap as well as the best features to choose for best significatnt value*
 
 
-### 3. Polynomial Linear Regression
+## 3. Polynomial Linear Regression
 > y = b0 + b1x1 + b2x1^2 + ... + bnx1^n
 
  *It is still called 'Linear' because the coefficients are linear*
 
  It is a linear model.
 
-### 4. Support vector for regression (SVM)
+## 4. Support vector for regression (SVM)
 - E(epsilon)-insensitive tube
 - We have a margin of error that we are allowing to the linear regression line
 - The points outside the tube do have error and the ones inside don't
@@ -177,7 +177,9 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
   8. Anova Radial basis kernel
   9. Linear spline kernel in 1d
       
-### 5. Decision Tree Regression
+## 5. Decision Tree Regression
+
+*Suitable for dataset with more number of features*
 
 *CART*
 1. Classification trees
@@ -186,7 +188,38 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
    - Algorithm are used to create splits in the graph and take average for each terminal leaves
    - Information entropy is used
    - To get the value of y for given features we check which terminal leaf in which the point falls in. And the value of that terminal leaf will be our answer  
-### 6. Random Forest Regression
 
+## 6. Random Forest Regression
+*ENSEMBLE LEARNING*
+   Take multiple algorithms and merge them to make a powerful algorithm
 
+1. Pick K random data points from the training set
+2. Build the decision tree associated to these K data points
+3. Choose the number Ntree of trees you want to build and repeat 1 & 2
+4. For a new data point, make each one of your Ntree predict the value of Y to for the data point in question and assign the new data point the average across all of the predicted Y values
 
+## R Squared
+
+*Greater the better*
+
+- SSres (Residual sum of squares) = SUM(yi - y'i)^2
+- SStot (Total sum of squares) = SUM(yi - yavg)^2
+
+- R^2 = 1 - (SSres/SStot)
+
+- if R^2 
+     = 1 -> perfect fit
+     ~ 0.9 -> Very good
+     < 0.7 -> Not great
+     < 0.4 -> Terrible
+     < 0 -> Model makes no sense for this data
+
+### Adjusted R Squared
+Problem: 
+When we add a new variable(feature), the SSres will decrease or stay the same (because of Ordinary Least Squares: SSres -> min) but SStot doesn't change.
+
+Solution: 
+Adj R^2 = 1 - (1 - R^2) x ((n-1)/(n-k-1))
+
+- k - number of independent variables
+- n - sample size
