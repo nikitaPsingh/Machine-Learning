@@ -34,12 +34,12 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 - *Feature Scaling should not be applied to dummy variables (dummuy variables refer to the columns that are encoded)*
 
 ### 1. Normalization
-   > X' = (X - min(X))/(max(X) - min(X))
+   #### X' = (X - min(X))/(max(X) - min(X))
    - min(X) : min of that column
    - recommended when we have normal distribution in most features
    - [0 ; +1]
 ### 2. Standardization
-   > X' = (X - mean(X))/ standard deviation(X)
+   #### X' = (X - mean(X))/ standard deviation(X)
    - mean(X) : mean of that column
    - standard deviation(X) : sd of X
    -  works almost all the time
@@ -182,6 +182,7 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 *Suitable for dataset with more number of features*
 
 *CART*
+
 1. Classification trees
 2. Regression trees
 
@@ -191,6 +192,7 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 
 ## 6. Random Forest Regression
 *ENSEMBLE LEARNING*
+
    Take multiple algorithms and merge them to make a powerful algorithm
 
 1. Pick K random data points from the training set
@@ -202,24 +204,31 @@ X_test[:, 3:5] = sc.transform(X_test[:, 3:5])
 
 *Greater the better*
 
-- SSres (Residual sum of squares) = SUM(yi - y'i)^2
-- SStot (Total sum of squares) = SUM(yi - yavg)^2
+#### SSres (Residual sum of squares) = SUM(yi - y'i)^2
 
-- R^2 = 1 - (SSres/SStot)
+#### SStot (Total sum of squares) = SUM(yi - yavg)^2
 
-- if R^2 
+> R^2 = 1 - (SSres/SStot)
+
+- if R^2
+  
      = 1 -> perfect fit
+  
      ~ 0.9 -> Very good
+  
      < 0.7 -> Not great
+  
      < 0.4 -> Terrible
+  
      < 0 -> Model makes no sense for this data
 
 ### Adjusted R Squared
 Problem: 
+
 When we add a new variable(feature), the SSres will decrease or stay the same (because of Ordinary Least Squares: SSres -> min) but SStot doesn't change.
 
 Solution: 
-Adj R^2 = 1 - (1 - R^2) x ((n-1)/(n-k-1))
+#### Adj R^2 = 1 - (1 - R^2) x ((n-1)/(n-k-1))
 
 - k - number of independent variables
 - n - sample size
